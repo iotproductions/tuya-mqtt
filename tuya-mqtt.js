@@ -9,7 +9,7 @@ const SimpleSwitch = require('./devices/simple-switch')
 const SimpleDimmer = require('./devices/simple-dimmer')
 const RGBTWLight = require('./devices/rgbtw-light')
 const GenericDevice = require('./devices/generic-device')
-const utils = require('./lib/utils')
+const utils = require('./lib/utils') 
 
 var CONFIG = undefined
 var tuyaDevices = new Array()
@@ -78,7 +78,7 @@ const main = async() => {
     try {
         CONFIG = require('./config')
     } catch (e) {
-        console.error('Configuration file not found!')
+        console.error('Configuration file not found !')
         debugError(e)
         process.exit(1)
     }
